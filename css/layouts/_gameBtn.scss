@@ -1,0 +1,34 @@
+//game__btns
+.game__BTN {
+	max-width: 350px;
+	height: 300px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+	margin: 5rem auto;
+
+	@include media('<=phone') {
+		margin: 8rem auto;
+	}
+	@include media('>=tablet') {
+		margin: 3rem auto;
+
+		max-width: 505px;
+		height: 400px;
+	}
+
+	#triangleImg {
+		position: absolute;
+		z-index: -1;
+		top: 40%;
+		height: 28%;
+		@include media('>=tablet') {
+			top: 40%;
+			height: 35%;
+		}
+	}
+	@include allBtn;
+}

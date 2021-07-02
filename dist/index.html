@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Rock Paper Scissor</title>
+		<link rel="stylesheet" href="/style.ff6b9f54.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+		<script src="/main.8f75cf09.js" defer=""></script>
+	<script src="/style.ff6b9f54.js"></script></head>
+	<body>
+		<!-- Score Header -->
+		<div class="container">
+			<div class="heading">
+				<div class="headers">
+					<span>Rock</span>
+					<span>Paper</span>
+					<span>Scissors</span>
+				</div>
+				<div class="scoreBox">
+					<h4 id="score">score</h4>
+					<p id="scoreNumber">0</p>
+				</div>
+			</div>
+
+			<!-- End of Score Header -->
+
+			<main class="game__BTN">
+				<img id="triangleImg" src="/bg-triangle.a4ce334f.svg" alt="traingleImg">
+				<button class="btn__Circle paper choose" data-choose="paper">
+					<span class="wrapper">
+						<img src="/icon-paper.b4bbba78.svg" alt="paper">
+					</span>
+				</button>
+				<button class="btn__Circle scissors choose" data-choose="scissors">
+					<span class="wrapper">
+						<img src="/icon-scissors.c1e9d1c7.svg" alt="scissor">
+					</span>
+				</button>
+				<button class="btn__Circle rock choose" data-choose="rock">
+					<span class="wrapper">
+						<img src="/icon-rock.c57e2546.svg" alt="rock">
+					</span>
+				</button>
+			</main>
+
+			<div id="btn">
+				<button onclick="rules__Btn()" id="rules">Rules</button>
+			</div>
+
+			<div class="rules">
+				<div class="rules__Background">
+					<h1>Rules</h1>
+					<div id="rulesImg">
+						<img src="/image-rules.82fb559b.svg" alt="rules">
+					</div>
+					<div id="close__btn" onclick="close__Btn()">
+						<img src="/icon-close.672c8e2b.svg" alt="close">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="game">
+			<div class="playerSelection">
+				<span id="picked">You picked</span>
+				<button class="btn__Circle paper" id="youPicked">
+					<span class="wrapper">
+						<img src="/icon-paper.b4bbba78.svg" alt="paper">
+					</span>
+				</button>
+			</div>
+
+			<div class="restart">
+				<span id="win">You Win</span>
+				<button id="btn__reset">Play Again</button>
+			</div>
+
+			<div class="houseSelection">
+				<span id="picked">The House picked</span>
+				<button class="btn__Circle scissors" id="computerSelect">
+					<span class="wrapper">
+						<img src="/icon-scissors.c1e9d1c7.svg" alt="scissor">
+					</span>
+				</button>
+			</div>
+		</div>
+
+		<script>var rules__Background = document.getElementsByClassName('rules'); //toggling the btn for rules overlay
+
+var rules__Btn = function rules__Btn() {
+  return rules__Background[0].style = 'display:flex';
+};
+
+var close__Btn = function close__Btn() {
+  return rules__Background[0].style = 'display:none';
+};</script>
+	</body>
+</html>

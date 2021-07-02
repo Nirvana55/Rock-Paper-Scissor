@@ -1,0 +1,18 @@
+//helpers
+@import './helper/fonts';
+@import './helper/colors';
+@import './helper/breakpoint';
+
+//mixins
+@import './mixins/mixins';
+
+//Components
+@import './components/basic';
+@import './components/ruleBtn';
+@import './components/btnreset';
+
+//Layouts
+@import './layouts/headerbox';
+@import './layouts/gameBtn';
+@import './layouts/rulesbgrnd';
+@import './layouts/game';

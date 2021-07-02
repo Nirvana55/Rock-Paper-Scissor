@@ -1,0 +1,59 @@
+//rules Background Overlay
+.rules {
+	position: absolute;
+	background-color: white;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+
+	@include media('>=tablet') {
+		background-color: rgba(0, 0, 0, 0.541);
+	}
+	.rules__Background {
+		@include global__Flex(column, center);
+		align-items: center;
+		margin: 60px auto;
+
+		@include media('>=tablet') {
+			width: 420px;
+			height: 400px;
+
+			margin: 140px auto 100px auto;
+			flex-wrap: wrap;
+			background-color: white;
+			border-radius: 10px;
+		}
+
+		h1 {
+			margin-top: 5rem;
+			color: $darkText;
+			text-transform: uppercase;
+			@include media('>=tablet') {
+				position: relative;
+				top: 0%;
+				left: -30%;
+				margin-top: 0;
+			}
+		}
+		#rulesImg {
+			padding: 70px 0 120px 0;
+			@include media('>=tablet') {
+				position: relative;
+				top: 5%;
+
+				margin: 0 auto;
+				padding: 0;
+			}
+		}
+		#close__btn {
+			cursor: pointer;
+			@include media('>=tablet') {
+				position: relative;
+				top: -80%;
+				right: -35%;
+			}
+		}
+	}
+}

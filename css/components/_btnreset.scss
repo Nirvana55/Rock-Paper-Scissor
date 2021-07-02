@@ -1,0 +1,23 @@
+#btn__reset {
+	text-transform: uppercase;
+	font-family: $fonts;
+
+	padding: 0.6em 2.8em;
+	font-size: 17px;
+	color: $darkText;
+	letter-spacing: 0.1rem;
+
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+
+	cursor: pointer;
+
+	@include media('>=tablet') {
+		padding: 0.6rem 1.8rem;
+		font-size: 12px;
+		font-weight: 600;
+
+		color: red;
+	}
+}

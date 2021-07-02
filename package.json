@@ -1,0 +1,22 @@
+{
+	"name": "Rock-Paper-Scissor",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "parcel html/index.html",
+		"build": "parcel build html/index.html"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@dogstudio/highway": "^2.2.2",
+		"gsap": "^3.6.1",
+		"parcel-bundler": "^1.12.5",
+		"sass": "^1.32.11"
+	},
+	"dependencies": {
+		"images": "^3.2.3"
+	}
+}
